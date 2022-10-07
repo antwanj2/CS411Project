@@ -3,15 +3,15 @@
 ## Project description
 
 ## Our Team 
-Maria Shevchuk 
+Maria Shevchuk ('23) 
 
-Hana Shehadi 
+Hana Shehadi ('23)
 
-Antwan Jones
+Antwan Jones ('23)
 
-Amelia Sundman
+Amelia Sundman ('24)
 
-Youngju Lee
+Youngju Lee ('23) 
 
 dog stuff??
 sign into social media and have an api search it for keywords and assign you a dog breed/dog on petfinder
