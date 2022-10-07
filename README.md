@@ -1,5 +1,14 @@
 # CS411Project
 
+## Project description
+
+## Our Team 
+Maria Shevchuk 
+Hana Shehadi 
+Antwan Jones
+Amelia Sundman
+Youngju Lee
+
 dog stuff??
 sign into social media and have an api search it for keywords and assign you a dog breed/dog on petfinder
 
