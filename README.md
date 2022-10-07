@@ -4,9 +4,13 @@
 
 ## Our Team 
 Maria Shevchuk 
+
 Hana Shehadi 
+
 Antwan Jones
+
 Amelia Sundman
+
 Youngju Lee
 
 dog stuff??
