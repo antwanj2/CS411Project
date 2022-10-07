@@ -4,4 +4,5 @@ Take the spotfy API that prompts users to log in, have users input their zipcode
 
 # Idea 2 - Weather fit
 Weather fit
+Take weather data from a database and make an outfit out of it. Idea for third party authentication? Sign into bank account to check how much money they have to spend on clothes lol
 
