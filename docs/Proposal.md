@@ -1,6 +1,6 @@
 # Idea 1 - Route Finder 
 
-Collect data from a user's schedule on Google Calendar and recommend a route for their day to get them from home, to each of their commitments, and back home at the end of the day. For travel options, we will ask the user about their preference (walking/bus/train) and whether they have a car. This application would help users to accurately estimate their travel time and, in turn, avoid being late. This app could also be helpful for people who are new to the city (eg. BU freshmen or transfer students). 
+Collect data from a user's schedule on Google Calendar and recommend a route for their day to get them from home, to each of their commitments, and back home at the end of the day. For travel options, we will ask the user about their preference (walking/bus/train) and whether they have a car or bike. This application would help users to accurately estimate their travel time and, in turn, avoid being late. This app could also be helpful for people who are new to the city (eg. BU freshmen or transfer students). 
 
 State 1: User signs into their Google Calendar account 
 
@@ -19,6 +19,7 @@ State 6: App saves the chosen route to the user's account and sends reminders wh
 * [MBTA](https://www.programmableweb.com/api/mbta)
 * [Google Calendar](https://www.programmableweb.com/api/google-calendar) 
 * [Google Maps](https://www.programmableweb.com/api/google-maps)
+* [Blue Bikes](https://www.bluebikes.com/system-data)
 
 
 # Idea 2 - Play the Weather
