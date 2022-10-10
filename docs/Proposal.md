@@ -21,16 +21,11 @@ State 6: App saves the chosen route to the user's account and sends reminders wh
 * [Google Maps](https://www.programmableweb.com/api/google-maps)
 
 
-# Idea 2 - Weather Playlist
+# Idea 2 - Play the Weather
 
-Create a Spotify playlist based on the weather at the user's location and the user's favorite artists/genres. 
+Create a Spotify playlist based on the weather at the user's location (mood: rainy=sad, etc) and the user's favorite artists/genres. Potential add-on: BeReal like feature, where the user gets a notification at a random time during the day and is prompted to share the last song they listened to.
+This application could help users save time when it comes to finding a playlist that matches your mood - we will create one just for you! This app also has potential to help ease feelings of seasonal depression. 
 
-(change the following)
-Take the spotfy API that prompts users to log in, have users input their zipcode and check the forecast for that day and make a playlsit based off of the mood.
-
-Potential add-on: BeReal like feature
-
-We start off by having the user sign into their Spotify and inputting their zipcode. We use a weather API to search for the temperature, rain, so on. and based off of that and our own computations we build a playlist on their profile. For the database, we have each user create a profile and then log their playlists and once a day we can pull a BeReal and have the user submit the song they're listening to.
 
 State 1: User signs into their Spotify account
 
