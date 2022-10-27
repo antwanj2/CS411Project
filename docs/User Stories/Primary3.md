@@ -1,4 +1,4 @@
-## Primary User Story #3
+## Primary User Story #3 - Existing User general use workflow
 As an existing/logged in user opening app on a new day I want to get my playlist quick so I can leave the house quick
 
 The idea is for this singular user, their information is already inputted, they are logged into their spotify and they have input their zipcode and they are signed in with
