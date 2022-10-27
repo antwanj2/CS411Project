@@ -4,6 +4,8 @@ This repository documents the development of a web application for CS411 - Softw
 
 ## Project description
 
+In this project, we aim to create a Spotify playlist based on the weather at the user's location (mood: rainy=sad, etc) and the user's favorite artists/genres. Potential add-on: BeReal like feature, where the user gets a notification at a random time during the day and is prompted to share the last song they listened to. This application could help users save time when it comes to finding a playlist that matches your mood - we will create one just for you! This app also has potential to help ease feelings of seasonal depression.
+
 ## Our Team 
 * [Maria Shevchuk ('23)](https://github.com/mariashev)
 * [Hana Shehadi ('23)](https://github.com/hanashehadi)
