@@ -1,4 +1,4 @@
-## Secondary User Story #2
+## Secondary User Story #2 - Unlink Spotify account from existing account
 
 As an existing user I want to unlink my spotify account so that it's no longer connected
 
