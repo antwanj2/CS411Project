@@ -11,3 +11,4 @@ This directory contains the following files that provide information about each 
 | 4| [Primary3](./Primary3.md)            |  Describes 3rd primary user story - Existing User general use workflow |
 | 5| [Secondary1](./Secondary1.md)        |  Describes 1st secondary user story - Deleting existing account |
 | 6| [Secondary2](./Secondary2.md)        |  Describes 2nd secondary user story - Unlink Spotify account from existing account  |
+| 7| [Secondary3](./Secondary2.md)        |  Describes 3rd secondary user story - Connect with other users |
