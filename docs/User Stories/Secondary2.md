@@ -2,7 +2,4 @@
 
 As an existing user I want to unlink my spotify account so that it's no longer connected.
 
-This is for the user who doesn’t want to link their Spotify account anymore. The user might want to listen to a particular song that is not in the Spotify app.
-For example, the user was unhappy with the spotify recommendation algorithm on the account that user was using currently, so the user created a new account to build up the new recommendation algorithm and link back to the app with the new account. 
-This process needs to be simple, so if we hit the “Settings” tab and inside the tab, there would be a “Unlink my Spotify” button. 
-After that, we will ask the reason for unlinking Spotify. Then it is done.
+This is for the user who doesn’t want to link their Spotify account anymore. The user might want to listen to a particular song that is not in the Spotify app or they simply do not want to have that link. This process needs to be simple, so by going to the “Settings” tab, there is a “Unlink my Spotify” button. After that, there will be a confirmation notice to make sure the user wants to unlink their account. If the user confirms, then the account will be unlinked to Spotify. However, in order to properly use the app there needs to be a connection to Spotify. Therefore, the app will be set on hold until a Spotify account is linked again (
