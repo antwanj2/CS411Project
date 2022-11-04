@@ -20,5 +20,14 @@ In this repository you can find:
 |  | **File/Folder**                   |                                  Description                               |
 |-:|:---------------------------------:|:---------------------------------------------------------------------------|
 | 1| [docs](./docs)  |  Contains files describing the project  |
+| 2| [mysite](./mysite)  |  Contains files detailing things like settings for the project  |
+| 3| [myvenv](./myvenv)  |  Contains files necessary for the running of DJANGO  |
+| 4| [playtheweather](./playtheweather)  |  The file that contains stuff for our website  |
+| 5| [.gitignore]  |  Details the files that git shouldn't upload i believe  |
+| 6| [README.md]  |  describes the files contained in our repo  |
+| 7| [backend.py]  |  probs need to delete this  |
+| 8| [frontend.html]  |  probs need to delete this  |
+| 9| [manage.py] |  This contains the main() function that will actually run our project like typing python manage.py runserver runs our server  |
+| 10| [requirements.txt] |  if you run this file it will uplaod Django on your computer  |
 
 
