@@ -3,6 +3,9 @@
 *~
 __pycache__
 
+#api key storage?
+.apikeys
+
 # Env
 .env
 myvenv/
