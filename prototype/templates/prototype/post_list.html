@@ -25,7 +25,10 @@ p {
 <h1>Play the Weather</h1>
 <p>
 <label for="zipcode">Enter your Zipcode:</label>
-<input type="text" id="zipcode" name="zipcode" required minlength="5" maxlength="5" size="7">
+  <form method="POST" action="/foo-route">
+  <input type="text" id="zipcode" name="zipcode" required minlength="5" maxlength="5" size="7"/>
+   <button type="submit">Send</button>
+</form>
 </p>
 
 </body>
