@@ -3,11 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 class zipToCoords(models.Model): #i dont think there is a purpose to this actually
-    zip = models.CharField(max_length=7)
-    name = models.CharField(max_length = 200) #name of the city
-    lat = models.CharField(max_length = 200)
-    lon = models.CharField(max_length = 200)
-    country = models.CharField(max_length = 200)
+    zip = models.IntegerField(max_length=7)
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
