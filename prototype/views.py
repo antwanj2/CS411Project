@@ -9,8 +9,7 @@ from .forms import ZipForm
  
 
 def zip(request): #this just displays the form to submit the zipcode
-    form = ZipForm(request.Post)
-    return render(request, 'prototype/post_list.html', {"form": form})
+    return render(request, 'prototype/post_list.html')
 
 def zip_response(request): #this needs to take the response of the submit button in post_list.html and output the coords
     user_zip = request.POST.get('zipcode','') 
