@@ -2,7 +2,7 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
-class zipToCoords(models.Model):
+class zipToCoords(models.Model): #i dont think there is a purpose to this actually
     zip = models.CharField(max_length=7)
     name = models.CharField(max_length = 200) #name of the city
     lat = models.CharField(max_length = 200)
