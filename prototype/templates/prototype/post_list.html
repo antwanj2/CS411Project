@@ -25,7 +25,7 @@ p {
 <h1>Play the Weather</h1>
 <p>
 <label for="zipcode">Enter your Zipcode:</label>
-  <form method="POST" action="/foo-route">
+  <form method="POST" action="/foo-route"> <!-- change from foo-route to "{% url 'zip' %}" maybe? idk how to input the zipcode into the view-->
   <input type="text" id="zipcode" name="zipcode" value = {{request.form.zipcode}} required minlength="5" maxlength="5" size="7">
    <button type="submit">Submit</button>
 </form>
