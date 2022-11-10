@@ -2,6 +2,12 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+class zipToCoords(models.Model):
+    zip = models.CharField(max_length=7)
+    name = models.CharField(max_length = 200) #name of the city
+    lat = models.CharField(max_length = 200)
+    lon = models.CharField(max_length = 200)
+    country = models.CharField(max_length = 200)
 
 class Post(models.Model):
     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
