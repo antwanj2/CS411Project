@@ -26,6 +26,9 @@ def zip_response(request): #this needs to take the response of the submit button
       'lon': zipdatajson['lon'],
       'country': zipdatajson['country']
       })
+      # lon = zipdatajson['lon']
+      # lat = zipdatajson['lat']
+      # weatherAPI = requests.get('https://api.openweathermap.org/data/2.5/weather?lat=%s&appid=d29579363a4d3c6b0eb89de9f488eb3c' + '{lat}&lon={lon}')
 # Create your views here.
 def post_list(request):
     return render(request, 'prototype/post_list.html', {}) #i changed this to say prototype instead of blog because my template is looking for blog not prototype
