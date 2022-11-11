@@ -17,3 +17,7 @@ from apikeys import openweather_key
 #generate button playlist view
 #display weather
 #call spotify API here and then open up the link to the spotify playlist
+
+#settings view
+#not sure what settings we will have here but i bet we will need em
+#definitely the option to log out
