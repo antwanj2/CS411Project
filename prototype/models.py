@@ -3,7 +3,7 @@ from django.db import models
 from django.utils import timezone
 
 class zipToCoords(models.Model): #i dont think there is a purpose to this actually
-    zip = models.IntegerField(max_length=7)
+    zip = models.IntegerField()
     def __str__(self):
         return self.title
 

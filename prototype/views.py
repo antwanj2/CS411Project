@@ -20,12 +20,12 @@ def zip_response(request): #this needs to take the response of the submit button
     if response.status_code == 404:
       return render(request, 'prototype/error.html')
     else:
-      return render(request, 'zipcode_display', {
-      # 'zip': zipdatajson['zip'], #now this is where we get an error, i think it might be i am reading the json file wrong
-      # 'name': zipdatajson['name'],
-      # 'lat': zipdatajson['lat'],
-      # 'lon': zipdatajson['lon'],
-      # 'country': zipdatajson['country']
+      return render(request, 'prototype/zipcode_display.html', {
+      'zip': zipdatajson['zip'], #now this is where we get an error, i think it might be i am reading the json file wrong
+      'name': zipdatajson['name'],
+      'lat': zipdatajson['lat'],
+      'lon': zipdatajson['lon'],
+      'country': zipdatajson['country']
       })
 # Create your views here.
 def post_list(request):
