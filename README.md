@@ -1,7 +1,6 @@
 # CS411Project
 
 This repository documents the development of a web application for CS411 - Software Engineering (Boston University). 
-ameliasundman.pythonanywhere.com
 
 ## Project description
 
