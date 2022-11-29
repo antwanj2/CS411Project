@@ -16,6 +16,7 @@ def homepage(request):
 
 #zipcode view
 def zipcode(request):
+#this should also have access to the settings page so we can log out
 #if they have entered a zipcode before ask if they wanna keep it or change
 #if not (zipcode == null) just ask to enter a zipcode
 #then hit a button that will open a new view with the generate button playlist
@@ -25,6 +26,7 @@ def zipcode(request):
 def playlist(request):
 #display weather
 #call spotify API here and then open up the link to the spotify playlist
+#link to settings page
     return render(request, 'PlayTheWeather/playlist.html')
 
 #settings view
