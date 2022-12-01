@@ -20,6 +20,22 @@ def zipcode(request):
 #if they have entered a zipcode before ask if they wanna keep it or change
 #if not (zipcode == null) just ask to enter a zipcode
 #then hit a button that will open a new view with the generate button playlist
+    # username = [ENTER USERNAME]
+    # access_token = [GET USERS ACCESS TOKEN]
+    # playlist_url = [the url + username + token]
+    # def generate_playlist(username, private): #based off of https://www.youtube.com/watch?v=c5sWvP9h3s8
+    #     reponse = requests.post(
+    #         playlist_url,
+    #         headers={
+    #             "Authorization": f"Bearer {access_token}"
+    #         }
+    #         json={
+    #             "name": name,
+    #             "public": public
+    #         }
+    #     )
+    #     json_resp = response.json()
+    #     return json_resp
     return render(request, 'PlayTheWeather/zipcode.html')
 
 #generate button playlist view
