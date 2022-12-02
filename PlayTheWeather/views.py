@@ -50,4 +50,5 @@ def settings(request):
 #not sure what settings we will have here but i bet we will need em
 #definitely the option to log out
 #option to change zipcode
+#this will need to call a function that can change the zipcode which will need to be added to models.py i believe
     return render(request, 'PlayTheWeather/settings.html')
