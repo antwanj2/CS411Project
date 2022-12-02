@@ -42,13 +42,11 @@ p {
   <input type="text" id="zipcode" name="zipcode" value = {{request.form.zipcode}} required minlength="5" maxlength="5" size="7">
    <button type="submit">Submit</button>
 </form>
+</p>
 
 <!-- returning user (with zipcode in database)-->
 <p> Your zipcode: {{ stored_zipcode }} </p> 
 <!-- add code to change zipcode here -->
-
-{% endif %}
-</p>
 
 </body>
 </html>
