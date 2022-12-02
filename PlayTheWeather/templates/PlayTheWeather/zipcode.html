@@ -4,3 +4,52 @@ new one and if they haven't entered one before just give them the option to ente
 <!-- this is of course just my (amelia's) idea on how we could do it, if u have a better way i would love to do it y'alls
 way-->
 <!--i supposed a link to the settings page should also be available on this page?-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Play the Weather </title>
+<style>
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Gotham Circular";
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>
+  <img src="ptw_logo.jpg"  width="150"> 
+  <br> Play the Weather
+</h1>
+<p>
+
+{% if stored_zipcode == null or stored_zipcode == '' %} <!-- change stored_zipcode var name to match database -->
+<label for="zipcode">Enter your Zipcode:</label>
+  <form method="POST" action="zip"> 
+    {% csrf_token %}
+  <input type="text" id="zipcode" name="zipcode" value = {{request.form.zipcode}} required minlength="5" maxlength="5" size="7">
+   <button type="submit">Submit</button>
+</form>
+
+{% else %}
+<p> Your zipcode: {{ stored_zipcode }} </p> <!-- change stored_zipcode var name to match database -->
+
+<!-- add code to change zipcode here -->
+
+{% endif %}
+</p>
+
+</body>
+</html>
