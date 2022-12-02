@@ -35,7 +35,7 @@ p {
 </h1>
 <p>
 
-{% if stored_zipcode == null or stored_zipcode == '' %} <!-- change stored_zipcode var name to match database -->
+<!-- if the user does not have a zipcode stored -->
 <label for="zipcode">Enter your Zipcode:</label>
   <form method="POST" action="zip"> 
     {% csrf_token %}
@@ -43,9 +43,8 @@ p {
    <button type="submit">Submit</button>
 </form>
 
-{% else %}
-<p> Your zipcode: {{ stored_zipcode }} </p> <!-- change stored_zipcode var name to match database -->
-
+<!-- returning user (with zipcode in database)-->
+<p> Your zipcode: {{ stored_zipcode }} </p> 
 <!-- add code to change zipcode here -->
 
 {% endif %}
