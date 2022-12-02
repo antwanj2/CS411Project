@@ -17,7 +17,7 @@ def homepage(request):
 #zipcode view
 def zipcode(request):
 #this should also have access to the settings page so we can log out
-#if they have entered a zipcode before ask if they wanna keep it or change
+#have link to settings to change zipcode
 #if not (zipcode == null) just ask to enter a zipcode
 #then hit a button that will open a new view with the generate button playlist
     # username = [ENTER USERNAME]
@@ -49,4 +49,5 @@ def playlist(request):
 def settings(request):
 #not sure what settings we will have here but i bet we will need em
 #definitely the option to log out
+#option to change zipcode
     return render(request, 'PlayTheWeather/settings.html')
