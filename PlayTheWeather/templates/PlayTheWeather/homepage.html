@@ -21,6 +21,28 @@ h1 {
 p {
   color: white;
   font-size: 20px;
+  margin: 10px 250px;
+}
+.button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #1DB954;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 </style>
 </head>
@@ -30,7 +52,13 @@ p {
   <img src="ptw_logo.jpg"  width="150"> 
   <br> Play the Weather
 </h1>
-<p> Hi! Welcome to Play the Weather, an app that can generate a playlist based on the weather at your location. Simply log in with your Spotify account, let us know where you are, and we will take care of the rest! </p>
+<p> 
+    Hi! Welcome to Play the Weather, an app that can generate a playlist based on the weather at your location. 
+    <br> Simply log in with your Spotify account, let us know where you are, and we will take care of the rest! 
+</p>
+<h1>
+    <button class="button">Log in</button>
+</h1>
 
 </body>
 </html>
