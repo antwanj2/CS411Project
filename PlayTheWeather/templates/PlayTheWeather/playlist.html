@@ -1,2 +1,66 @@
 <!--displays the weather for the zipcode they entered and has a "generate playlist button" which will then open
 a link to the new spotify playlist-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Play the Weather </title>
+<style>
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Gotham Circular";
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  font-family: "Times New Roman";
+  color: white;
+  font-size: 20px;
+  margin: 10px 250px;
+}
+.button {
+  font-family: "Times New Roman";
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: #1DB954;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+</style>
+</head>
+<body>
+
+    <h1>
+        <img src="ptw_logo.jpg"  width="150"> 
+        <br> Play the Weather
+      </h1>
+
+<!-- display weather for the zipcode -->
+<p> The weather at {zipcode}: 
+    <br> Display here
+</p>
+<h1>
+    <button class="button">Generate Playlist</button>
+</h1>
+
+</body>
+</html>
