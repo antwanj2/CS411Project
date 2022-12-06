@@ -14,7 +14,7 @@ Client_Secret = apikeys.Client_Secret
 authorization_base_url = "https://accounts.spotify.com/authorize"
 token_url = "https://accounts.spotify.com/api/token"
 scope = ["user-read-email","playlist-modify-public"]
-redirect_uri = 'https://google.com' #what is it?
+redirect_uri = 'https://127.0.0.1:8000/' #what is it?
 #homepage view
 def homepage(request):
 #check whether or not the user is signed in
@@ -27,7 +27,7 @@ def homepage(request):
     spotify = OAuth2Session(Client_ID, scope=scope, redirect_uri=redirect_uri)
     authorization_url, state = spotify.authorization_url(authorization_base_url)
     print('Please go here and authorize: ', authorization_url)
-    redirect_response = input('\n\nhttps://google.com') #not sure what the redirect url is
+    redirect_response = input('\n\nhttps://127.0.0.1:8000/') #not sure what the redirect url is
     auth = HTTPBasicAuth(Client_ID, Client_Secret)
     token = spotify.fetch_token(token_url, auth=auth, authorization_response=redirect_response)
     #add the token to models.py
