@@ -2,9 +2,19 @@ from django.shortcuts import render
 import requests
 import json
 from apikeys import openweather_key
+import apikeys
+from requests_oauthlib import OAuth2Session
+from requests.auth import HTTPBasicAuth
+
 
 # Create your views here.
-
+openweathermap_key = apikeys.openweathermap_key
+spotify_base_address = "https://api.spotify.com"
+Client_ID = apikeys.Client_ID
+Client_Secret = apikeys.Client_Secret
+authorization_base_url = "https://accounts.spotify.com/authorize"
+token_url = "https://accounts.spotify.com/api/token"
+scope = ["user-read-email","playlist-modify-public"]
 #homepage view
 def homepage(request):
 #check whether or not the user is signed in
@@ -12,6 +22,15 @@ def homepage(request):
 #if they're not display a page that will describe our app and prompt them to log in
 #if they have never signed in before add them to the database with null as their zipcode
 #once they log in direct them to the zipcode page
+    #this code is mostly from https://github.com/requests/requests-oauthlib/blob/master/docs/examples/spotify.rst
+    spotify = OAuth2Session(client_id, scope=scope, redirect_uri=redirect_uri)
+    authorization_url, state = spotify.authorization_url(authorization_base_url)
+    print('Please go here and authorize: ', authorization_url)
+    redirect_response = input('\n\nPaste the full redirect URL here: ')
+    auth = HTTPBasicAuth(client_id, client_secret)
+    token = spotify.fetch_token(token_url, auth=auth, authorization_response=redirect_response)
+    #add the token to models.py
+    r = spotify.get('https://api.spotify.com/v1/me')
     return render(request, 'PlayTheWeather/homepage.html')
 
 #zipcode view
