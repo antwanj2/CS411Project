@@ -20,30 +20,34 @@ def zipcode(request):
 #have link to settings to change zipcode
 #if not (zipcode == null) just ask to enter a zipcode
 #then hit a button that will open a new view with the generate button playlist
-    # username = [ENTER USERNAME]
-    # access_token = [GET USERS ACCESS TOKEN]
-    # playlist_url = [the url + username + token]
-    # def generate_playlist(username, private): #based off of https://www.youtube.com/watch?v=c5sWvP9h3s8
-    #     reponse = requests.post(
-    #         playlist_url,
-    #         headers={
-    #             "Authorization": f"Bearer {access_token}"
-    #         }
-    #         json={
-    #             "name": name,
-    #             "public": public
-    #         }
-    #     )
-    #     json_resp = response.json()
-    #     return json_resp
-    return render(request, 'PlayTheWeather/zipcode.html')
+    if request.zipcode == None:
+        print("enter zipcode again")
+        return
+    else:
+        return render(request, 'PlayTheWeather/zipcode.html')
+
 
 #generate button playlist view
 def playlist(request):
 #display weather
 #call spotify API here and then open up the link to the spotify playlist
 #link to settings page
-    return render(request, 'PlayTheWeather/playlist.html')
+    playlist_url = "https://api.spotify.com/v1/users/" + str(request.user_id) + "/playlists"
+    access_token = request.access_token
+   #based off of https://www.youtube.com/watch?v=c5sWvP9h3s8
+    response = requests.post(
+        playlist_url,
+        headers={
+             "Authorization": f"Bearer {request.access_token}"
+        },
+        json={
+            "name": name,
+            "public": public
+        }
+    )
+    json_resp = response.json()
+    
+    return render(json_resp, 'PlayTheWeather/playlist.html')
 
 #settings view
 def settings(request):
