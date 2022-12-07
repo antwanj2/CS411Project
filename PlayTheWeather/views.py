@@ -23,7 +23,18 @@ def zipcode(request):
         print("enter zipcode again")
         return
     else:
-        return render(request, 'PlayTheWeather/zipcode.html')
+        user_zip = request.POST.get('zipcode','') 
+        response = requests.get('https://api.openweathermap.org/data/2.5/weather?zip=%s,us&appid=d29579363a4d3c6b0eb89de9f488eb3c', user_zip) 
+        zipdata = response.text
+        zipdatajson = json.loads(zipdata)
+        if response.status_code == 404:
+            return render(request, 'prototype/error.html')
+        else:
+            return render(request, 'PlayTheWeather/zipcode.html', {
+            'temp': zipdatajson['main.temp'],
+            'precip': zipdatajson['weather.main']
+            })
+    #this gives us the temp and precipitation hopefully
 
 
 #generate button playlist view
