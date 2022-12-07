@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'PlayTheWeather',
     'prototype',
-    'oauth2_provider', #have to use the command 'pip install django-oauth-toolkit'
+    #'oauth2_provider', #have to use the command 'pip install django-oauth-toolkit'
 ]
 
 MIDDLEWARE = [
