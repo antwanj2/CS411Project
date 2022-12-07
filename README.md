@@ -1,6 +1,11 @@
 # CS411Project
-
 This repository documents the development of a web application for CS411 - Software Engineering (Boston University). 
+
+# Play The Weather
+<img src="PlayTheWeather/templates/PlayTheWeather/ptw_logo.jpg"  width="150" height="150">
+
+Play The Weather is an app that can generate a playlist based on the weather at your location.  <br /> 
+Simply log in with your Spotify account, let us know where you are (zipcode), and we will take care of the rest!
 
 ## Project description
 
