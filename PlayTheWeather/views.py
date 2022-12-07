@@ -1,7 +1,7 @@
 from django.shortcuts import render
 import requests
 import json
-from apikeys import openweather_key
+from . import apikeys
 
 # Create your views here.
 #homepage view
