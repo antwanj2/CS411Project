@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'PlayTheWeather',
+    'rest_framework',
+    'api.apps.Apiconfig',
+    'spotify.apps.SpotifyConfig'
     'prototype',
 ]
 
