@@ -21,7 +21,7 @@ def zipcode(request):
 #then hit a button that will open a new view with the generate button playlist
     if request.zipcode == None:
         print("enter zipcode again")
-        return
+        return 
     else:
         user_zip = request.POST.get('zipcode','') 
         response = requests.get('https://api.openweathermap.org/data/2.5/weather?zip=%s,us&appid=d29579363a4d3c6b0eb89de9f488eb3c', user_zip) 
@@ -31,10 +31,17 @@ def zipcode(request):
             return render(request, 'prototype/error.html')
         else:
             return render(request, 'PlayTheWeather/zipcode.html', {
-            'temp': zipdatajson['main.temp'],
-            'precip': zipdatajson['weather.main']
+            'temp': zipdatajson['main.temp'], #i'm not sure if this is the correct way to read JSON files -amelia
+            'weather_id': zipdatajson['weather.id'], #this id we will use to determine which playlist to use
+            'weather_desc': zipdatajson['weather.discription'] #we want to display the weather_desc to user because it's more specific
             })
-    #this gives us the temp and precipitation hopefully
+    #weather_id meanings:
+        #2XX = thunderstorm
+        #3XX = drizzle
+        #5XX = rain
+        #6XX = Snow
+        #7XX = random atmosphere
+        #8XX = clear/cloudy
 
 
 #generate button playlist view
