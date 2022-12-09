@@ -6,8 +6,7 @@ export default class Homepage extends Component {
         super(props);
     }
     render(){
-        return 
-        <h1> WORKKKK </h1>;
+        return <h1> <body>WORKKKK</body> </h1>;
         
     }
 }
