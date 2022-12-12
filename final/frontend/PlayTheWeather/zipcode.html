@@ -1,0 +1,53 @@
+<!--this will just be similar to the beautiful zipcode page maria uploaded except i think it should
+ask the user if the zipcode we have stored for them in our database they want to use again or enter a
+new one and if they haven't entered one before just give them the option to enter one-->
+<!-- this is of course just my (amelia's) idea on how we could do it, if u have a better way i would love to do it y'alls
+way-->
+<!--i supposed a link to the settings page should also be available on this page?-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> Play the Weather </title>
+<style>
+body {
+  background-color: black;
+}
+
+h1 {
+  font-family: "Gotham Circular";
+  color: white;
+  font-size: 40px;
+  text-align: center;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+  margin: 10px 250px;
+}
+</style>
+</head>
+<body>
+
+<h1>
+  <img src="ptw_logo.jpg"  width="150"> 
+  <br> Play the Weather
+</h1>
+<p>
+
+<!-- if the user does not have a zipcode stored -->
+<label for="zipcode">Enter your Zipcode:</label>
+  <form method="POST" action="zip"> 
+    {% csrf_token %}
+  <input type="text" id="zipcode" name="zipcode" value = {{request.form.zipcode}} required minlength="5" maxlength="5" size="7">
+   <button type="submit">Submit</button>
+</form>
+</p>
+
+<!-- returning user (with zipcode in database)-->
+<p> Your zipcode: {{ stored_zipcode }} </p> 
+<!-- add code to change zipcode here -->
+
+</body>
+</html>
