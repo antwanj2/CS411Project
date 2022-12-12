@@ -32,7 +32,7 @@ p {
   <form method="POST" action="zip"> <!-- change from foo-route to "{% url 'zip' %}" maybe? idk how to input the zipcode into the view-->
     {% csrf_token %}
   <input type="text" id="zipcode" name="zipcode" value = {{request.form.zipcode}} required minlength="5" maxlength="5" size="7">
-   <button type="submit">Submit</button>
+   <button type="submit"> Submit</button>
 </form>
 </p>
 

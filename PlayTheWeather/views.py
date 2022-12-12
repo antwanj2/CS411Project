@@ -14,11 +14,11 @@ def homepage(request):
     return render(request, 'PlayTheWeather/homepage.html')
 
 #zipcode view
-def zipcode(request):
 #this should also have access to the settings page so we can log out
 #have link to settings to change zipcode
 #if not (zipcode == null) just ask to enter a zipcode
 #then hit a button that will open a new view with the generate button playlist
+def zipcode(request):
     if request.zipcode == None:
         print("enter zipcode again")
         return 
