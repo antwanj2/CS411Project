@@ -7,6 +7,11 @@ This repository documents the development of a web application for CS411 - Softw
 Play The Weather is an app that can generate a playlist based on the weather at your location.  <br /> 
 Simply log in with your Spotify account, let us know where you are (zipcode), and we will take care of the rest!
 
+
+https://user-images.githubusercontent.com/87496627/207226528-ee3a12f7-2206-4e53-b13d-d282369ea70f.mp4 
+
+
+
 ## Project description
 
 In this project, we aim to create a Spotify playlist based on the weather at the user's location (mood: rainy=sad, etc) and the user's favorite artists/genres. Potential add-on: BeReal like feature, where the user gets a notification at a random time during the day and is prompted to share the last song they listened to. This application could help users save time when it comes to finding a playlist that matches your mood - we will create one just for you! This app also has potential to help ease feelings of seasonal depression.
